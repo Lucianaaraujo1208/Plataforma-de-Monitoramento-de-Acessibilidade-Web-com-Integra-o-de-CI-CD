@@ -9,7 +9,7 @@ describe('Teste de Acessibilidade CI', () => {
         // Injetar a biblioteca Axe na página
         cy.injectAxe(); 
         
-        // Verificar a acessibilidade
+        // Verificar a acessibilidade..
         cy.checkA11y(); 
     });
 });
