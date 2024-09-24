@@ -5,6 +5,6 @@ describe('Teste de Acessibilidade', () => {
         
         // Verifique a acessibilidade
         cy.injectAxe(); // Isso injetará a biblioteca Axe
-        cy.checkA11y(); // Isso executa a verificação de acessibilidade
+        cy.checkA11y(); // Isso executa a verificação de acessibilidade.
     });
 });
