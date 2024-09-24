@@ -1,14 +1,13 @@
 {
   "name": "monitoramento-de-acessibilidade-web-com-integracao-de-cicd",
   "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "",
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "scripts": {
+    "test": "cypress run" // Comando para executar os testes do Cypress
+  },
   "devDependencies": {
     "axe-core": "^4.10.0",
     "cypress": "^13.14.2"
