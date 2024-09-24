@@ -14,6 +14,6 @@ describe('Teste de Acessibilidade CI', () => {
 
         cy.checkA11y(null, null, (violations) => {
             cy.log(violations);
-    });
+        }); // Adicionei o fechamento aqui
+    }); // Fechamento do 'it'
 });
-
