@@ -4,12 +4,16 @@ import 'cypress-axe';
 describe('Teste de Acessibilidade CI', () => {
     it('Deve garantir que a página esteja acessível', () => {
         // Visite a página que você deseja testar
-        cy.visit('/'); // Se a baseUrl for configurada, apenas coloque a rota
+        cy.visit('/'); // Altere se necessário
 
         // Injetar a biblioteca Axe na página
         cy.injectAxe(); 
         
-        // Verificar a acessibilidade..
+        // Verificar a acessibilidade
         cy.checkA11y(); 
+
+        cy.checkA11y(null, null, (violations) => {
+            cy.log(violations);
     });
 });
+
