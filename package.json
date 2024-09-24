@@ -2,7 +2,7 @@
   "name": "monitoramento-de-acessibilidade-web-com-integracao-de-cicd",
   "version": "1.0.0",
   "scripts": {
-    "test": "cypress run"  // Remova este comentário
+    "test": "cypress run"
   },
   "keywords": [],
   "author": "",
