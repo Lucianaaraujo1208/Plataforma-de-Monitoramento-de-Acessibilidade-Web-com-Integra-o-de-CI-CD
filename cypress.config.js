@@ -1,10 +1,8 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
-  projectId: 'd8jvdp',
   e2e: {
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
+    specPattern: "cypress/e2e/**/*.cy.js",  // Ajusta o padrão de especificação
+    baseUrl: 'http://exemplo.com',          // Coloque o URL do seu site
   },
 });

@@ -1,15 +1,20 @@
 {
   "name": "monitoramento-de-acessibilidade-web-com-integracao-de-cicd",
   "version": "1.0.0",
+  "description": "Projeto para monitoramento de acessibilidade.",
+  "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "test": "cypress run"
   },
   "keywords": [],
-  "author": "",
+  "author": "Seu Nome",
   "license": "ISC",
-  "description": "",
+  "dependencies": {
+    "cypress": "^13.14.2",
+    "express": "^4.21.0"
+  },
   "devDependencies": {
-    "axe-core": "^4.10.0",
-    "cypress": "^13.14.2"
+    "cypress-axe": "^1.5.0"
   }
 }
